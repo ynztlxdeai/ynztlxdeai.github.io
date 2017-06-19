@@ -18,7 +18,7 @@
 
     <script>
         $(function(){
-        	$("#getIp").html(window.location.href);
+        	
         	});
     </script>
 </head>
