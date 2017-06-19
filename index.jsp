@@ -1,4 +1,11 @@
-<!DOCTYPE html>
+<%--
+  Created by IntelliJ IDEA.
+  User: Vincent
+  Date: 2017/6/17
+  Time: 10:09
+  To change this template use File | Settings | File Templates.
+--%>
+<%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
     <meta charset="UTF-8">
@@ -9,22 +16,19 @@
     <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css"
           integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
           crossorigin="anonymous">
-    <script src="../js/jquery-3.0.0.min.js"/>
 
     <!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
     <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"
             integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
             crossorigin="anonymous"></script>
-    <script src="../js/md5.js"></script>
 
-    <script>
-        $(function () {
-            alert(window.location.href);
-            $("#getIp").html(window.location.href);
-        });
-    </script>
 </head>
 <body>
-	<div id="getIp"></div>
+<%--父容器--%>
+<div class="container">
+    <div style="text-align: center">
+       <%= request.getRemoteAddr() %>
+    </div>
+</div>
 </body>
 </html>
